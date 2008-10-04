@@ -1,0 +1,48 @@
+MootoolSmoothgallery : An Open Source Rails Plugin by Viraj
+===========================================================
+
+Author: Viraj Thenuwara ( vthenuwara@gmail.com )
+
+Uses JonDesign's (Jonathan Schemoul) SmoothGallery 2.0, a javascript gallery and slideshow system.
+http://smoothgallery.jondesign.net/
+
+***************************************************************************
+***************************************************************************
+                              IMPORTANT
+***************************************************************************
+***************************************************************************
+
+THIS PLUGIN REQUIRED MOOTOOL JS VERSION 1.11
+
+Installer will copy the required js files and the init.rb will make the 
+mootools.v1.11.js and jd.gallery.js as your defaults
+
+You cannot use this with prototype and script.aculo.us
+
+The SmoothGallery 2.0 is not working with the latest version of mootool
+
+***************************************************************************
+To use:
+
+  ./script/generate mootool_smoothgalery 
+
+
+Example:
+
+  # View  
+  <div class="content">
+    <%= smooth_gallery( "myGallery", @blogs, { :store_dir => "gallery/green/" } )%>
+  </div>
+
+smooth_gallery takes a 
+   - first parameter as a DOM id
+   - second parameter as the collection ( )
+   - third parameter(optional), an options hash to specify the image stored directory
+  
+
+For more information,
+* http://mootools.net/
+* http://smoothgallery.jondesign.net/
+
+
+Copyright (c) 2008 Viraj Thenuwara, released under the MIT license
